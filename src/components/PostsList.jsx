@@ -6,13 +6,9 @@ import Modal from "./Modal";
 
 function PostsList() {
 
-    const[modalIsVisible, setModalIsVisible] = useState(true);
+    
     const [enteredBody, setEnteredBody] = useState('');
     const [enteredAuthor, setEnteredAuthor] = useState('');
-
-    function hideModalHandler(){
-        setModalIsVisible(false);
-    }
 
     function bodyChangeHandler(event) {
         setEnteredBody(event.target.value)
